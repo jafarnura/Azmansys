@@ -38,5 +38,10 @@ namespace AzmanSys
             bookingsForm.Show();
           
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
