@@ -83,5 +83,10 @@ namespace AzmanSys
             }
             mysqlConn.connClose();
         }
+
+        private void FlightsForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

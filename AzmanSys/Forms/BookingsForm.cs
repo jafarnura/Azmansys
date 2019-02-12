@@ -72,5 +72,10 @@ namespace AzmanSys
             Close();
             (new MainForm()).Show();
         }
+
+        private void BookingsForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
