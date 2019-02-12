@@ -28,6 +28,7 @@ namespace AzmanSys
         }
 
         public void deleteCustomer(string CusID)
+
         {
             MySqlCommand comm = conn.CreateCommand();
             comm.CommandText = "DELETE FROM `tblCustomer` WHERE CusID = @CusID";
