@@ -91,7 +91,8 @@ namespace AzmanSys
 
         private void FlightsForm_Load(object sender, EventArgs e)
         {
-
+            Close();
+            (new MainForm()).Show();
         }
     }
 }
