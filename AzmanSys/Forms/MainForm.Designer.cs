@@ -49,7 +49,7 @@
             // btnManageFlights
             // 
             this.btnManageFlights.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnManageFlights.Location = new System.Drawing.Point(182, 112);
+            this.btnManageFlights.Location = new System.Drawing.Point(171, 13);
             this.btnManageFlights.Margin = new System.Windows.Forms.Padding(4);
             this.btnManageFlights.Name = "btnManageFlights";
             this.btnManageFlights.Size = new System.Drawing.Size(174, 99);
@@ -61,7 +61,7 @@
             // btnManageBookings
             // 
             this.btnManageBookings.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnManageBookings.Location = new System.Drawing.Point(380, 13);
+            this.btnManageBookings.Location = new System.Drawing.Point(353, 13);
             this.btnManageBookings.Margin = new System.Windows.Forms.Padding(4);
             this.btnManageBookings.Name = "btnManageBookings";
             this.btnManageBookings.Size = new System.Drawing.Size(162, 99);
@@ -76,7 +76,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(821, 489);
+            this.ClientSize = new System.Drawing.Size(794, 495);
             this.Controls.Add(this.btnManageBookings);
             this.Controls.Add(this.btnManageFlights);
             this.Controls.Add(this.btnManageCustomers);
