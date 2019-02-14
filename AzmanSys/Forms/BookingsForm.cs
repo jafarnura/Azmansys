@@ -82,5 +82,15 @@ namespace AzmanSys
         {
 
         }
+
+        private void tbFlightID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbBookingTotalCost_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

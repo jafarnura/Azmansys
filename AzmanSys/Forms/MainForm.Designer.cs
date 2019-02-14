@@ -76,7 +76,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(990, 387);
+            this.ClientSize = new System.Drawing.Size(990, 404);
             this.Controls.Add(this.btnManageBookings);
             this.Controls.Add(this.btnManageFlights);
             this.Controls.Add(this.btnManageCustomers);
