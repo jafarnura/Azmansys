@@ -38,7 +38,15 @@ namespace AzmanSys
             comm.ExecuteNonQuery();
             connClose();
         }
+        public void deleteFlight(string FlightID)
 
+        {
+            MySqlCommand comm = conn.CreateCommand();
+            comm.CommandText = "DELETE FROM `tblFlight` WHERE FlightID = @FlightID";
+            comm.Parameters.AddWithValue("@FlightID", FlightID);
+            comm.ExecuteNonQuery();
+            connClose();
+        }
 
     }
 }
