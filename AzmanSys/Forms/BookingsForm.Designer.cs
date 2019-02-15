@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookingsForm));
             this.tbFlightID = new System.Windows.Forms.TextBox();
             this.tbCustomerID = new System.Windows.Forms.TextBox();
             this.tbBookingID = new System.Windows.Forms.TextBox();
@@ -203,7 +202,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::AzmanSys.Properties.Resources.Airplane_Jet_Airplanes_in_sky_Wallpaper;
             this.ClientSize = new System.Drawing.Size(945, 632);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnMainMenu);

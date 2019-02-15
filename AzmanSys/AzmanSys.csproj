@@ -73,17 +73,23 @@
       <DependentUpon>FlightsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="dbConn\FlightsDbConn.cs" />
-    <Compile Include="Forms\Login form.cs">
+    <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Login form.Designer.cs">
-      <DependentUpon>Login form.cs</DependentUpon>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H:\japharnura50%40.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H:\japharnura50%40.Designer.cs">
+      <DependentUpon>japharnura50%40.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -96,11 +102,14 @@
     <EmbeddedResource Include="Forms\FlightsForm.resx">
       <DependentUpon>FlightsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Login form.resx">
-      <DependentUpon>Login form.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H:\japharnura50%40.resx">
+      <DependentUpon>japharnura50%40.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -135,6 +144,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pexels-photo-415708.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Airplane-Jet-Airplanes-in-sky-Wallpaper.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

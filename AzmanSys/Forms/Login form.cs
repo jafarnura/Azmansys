@@ -26,5 +26,17 @@ namespace AzmanSys.Forms
         {
 
         }
+
+        private void Login_form_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Close(); // close the current form
+            Login_Form loginform = new Login_Form();
+            loginform.Show()
+        }
     }
 }

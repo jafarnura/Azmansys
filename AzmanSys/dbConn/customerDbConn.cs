@@ -13,7 +13,7 @@ namespace AzmanSys
         public void insertCustomer(string CusFName, string CusLName, string CusTelNum)
         {
             MySqlCommand comm = conn.CreateCommand();
-            comm.CommandText = "INSERT INTO `tblCustomer` (`CusID`, `CusFName`, `CusLName`, `CusTelNum`) VALUES (NULL,@CusFName, @CusLName, @CusTelNum);";
+            comm.CommandText = "INSERT INTO `tbl_Customer` (`CusID`, `CusFName`, `CusLName`, `CusTelNum`) VALUES (NULL,@CusFName, @CusLName, @CusTelNum);";
             comm.Parameters.AddWithValue("@CusFName", CusFName);
             comm.Parameters.AddWithValue("@CusLName", CusLName);
             comm.Parameters.AddWithValue("@CusTelNum", CusTelNum);
@@ -25,7 +25,7 @@ namespace AzmanSys
         public void updateCustomer(string CusID, string FName, string LName, string Tel)
         {
             MySqlCommand comm = conn.CreateCommand();
-            comm.CommandText = "UPDATE `tblCustomer` SET `CusFname`=@FName,`CusLName`=@LName,`CusTelNum`=@Tel WHERE CusID = @CusID";
+            comm.CommandText = "UPDATE `tbl_Customer` SET `CusFname`=@FName,`CusLName`=@LName,`CusTelNum`=@Tel WHERE CusID = @CusID";
             comm.Parameters.AddWithValue("@FName", FName);
             comm.Parameters.AddWithValue("@LName", LName);
             comm.Parameters.AddWithValue("Tel", Tel);
@@ -41,7 +41,7 @@ namespace AzmanSys
 
         {
             MySqlCommand comm = conn.CreateCommand();
-            comm.CommandText = "DELETE FROM `tblCustomer` WHERE CusID = @CusID";
+            comm.CommandText = "DELETE FROM `tbl_Customer` WHERE CusID = @CusID";
             comm.Parameters.AddWithValue("@CusID", CusID);
             comm.ExecuteNonQuery();
             connClose();

@@ -20,7 +20,7 @@ namespace AzmanSys
             mysqlConn.connect();
             if (mysqlConn.connOpen() == true)
             {
-                dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM `tblCustomer`").Tables[0];
+                dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM `tbl_Customer`").Tables[0];
             }
             mysqlConn.connClose();
         }
@@ -30,7 +30,7 @@ namespace AzmanSys
             if (mysqlConn.connOpen() == true)
             {
                 mysqlConn.insertCustomer(tbFName.Text, tbLName.Text, tbTel.Text);
-                dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM `tblCustomer`").Tables[0];
+                dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM `tbl_Customer`").Tables[0];
             }
             mysqlConn.connClose();
         }
@@ -51,7 +51,7 @@ namespace AzmanSys
             if (mysqlConn.connOpen() == true)
             {
                 mysqlConn.updateCustomer(tbCustID.Text, tbFName.Text, tbLName.Text, tbTel.Text);
-                dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM `tblCustomer`").Tables[0];
+                dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM `tbl_Customer`").Tables[0];
             }
             mysqlConn.connClose();
         }
@@ -63,7 +63,7 @@ namespace AzmanSys
                 if (mysqlConn.connOpen() == true)
                 {
                     mysqlConn.deleteCustomer(tbCustID.Text);
-                    dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM `tblCustomer`").Tables[0];
+                    dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM `tbl_Customer`").Tables[0];
                 }
                 mysqlConn.connClose();
             }
@@ -78,6 +78,11 @@ namespace AzmanSys
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void CustomersForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
