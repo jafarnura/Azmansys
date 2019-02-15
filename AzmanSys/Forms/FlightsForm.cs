@@ -77,7 +77,9 @@ namespace AzmanSys
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+          //  Application.Exit();
+            Close();
+            (new MainForm()).Show();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -91,8 +93,7 @@ namespace AzmanSys
 
         private void FlightsForm_Load(object sender, EventArgs e)
         {
-            Close();
-            (new MainForm()).Show();
+           
         }
     }
 }
