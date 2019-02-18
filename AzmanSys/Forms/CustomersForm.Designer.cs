@@ -40,6 +40,12 @@
             this.tbFName = new System.Windows.Forms.TextBox();
             this.tbLName = new System.Windows.Forms.TextBox();
             this.tbTel = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbDob = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tbNation = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +54,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(56, 195);
+            this.dataGridView1.Location = new System.Drawing.Point(56, 311);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -153,11 +159,67 @@
             this.tbTel.Size = new System.Drawing.Size(100, 20);
             this.tbTel.TabIndex = 11;
             // 
+            // tbEmail
+            // 
+            this.tbEmail.Location = new System.Drawing.Point(157, 179);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(100, 20);
+            this.tbEmail.TabIndex = 12;
+            this.tbEmail.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(79, 186);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Email";
+            // 
+            // tbDob
+            // 
+            this.tbDob.Location = new System.Drawing.Point(157, 212);
+            this.tbDob.Name = "tbDob";
+            this.tbDob.Size = new System.Drawing.Size(100, 20);
+            this.tbDob.TabIndex = 14;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(91, 219);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(27, 13);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Dob";
+            // 
+            // tbNation
+            // 
+            this.tbNation.Location = new System.Drawing.Point(157, 254);
+            this.tbNation.Name = "tbNation";
+            this.tbNation.Size = new System.Drawing.Size(100, 20);
+            this.tbNation.TabIndex = 16;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(79, 254);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 13);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Nationality";
+            // 
             // CustomersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.LightCoral;
+            this.ClientSize = new System.Drawing.Size(800, 552);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.tbNation);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.tbDob);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.tbTel);
             this.Controls.Add(this.tbLName);
             this.Controls.Add(this.tbFName);
@@ -193,5 +255,11 @@
         private System.Windows.Forms.TextBox tbFName;
         private System.Windows.Forms.TextBox tbLName;
         private System.Windows.Forms.TextBox tbTel;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tbDob;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tbNation;
+        private System.Windows.Forms.Label label7;
     }
 }

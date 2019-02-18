@@ -29,7 +29,7 @@ namespace AzmanSys
         {
             if (mysqlConn.connOpen() == true)
             {
-                mysqlConn.insertCustomer(tbFName.Text, tbLName.Text, tbTel.Text);
+                mysqlConn.insertCustomer(tbFName.Text, tbLName.Text, tbTel.Text, tbDob.Text, tbDob.Text,tbNation.Text);
                 dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM `tbl_Customer`").Tables[0];
             }
             mysqlConn.connClose();
@@ -50,7 +50,7 @@ namespace AzmanSys
         {
             if (mysqlConn.connOpen() == true)
             {
-                mysqlConn.updateCustomer(tbCustID.Text, tbFName.Text, tbLName.Text, tbTel.Text);
+                mysqlConn.updateCustomer(tbCustID.Text, tbFName.Text, tbLName.Text, tbTel.Text, tbDob.Text, tbEmail.Text, tbNation.Text);
                 dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM `tbl_Customer`").Tables[0];
             }
             mysqlConn.connClose();
@@ -81,6 +81,11 @@ namespace AzmanSys
         }
 
         private void CustomersForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
