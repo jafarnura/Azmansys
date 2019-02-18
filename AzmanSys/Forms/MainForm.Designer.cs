@@ -38,10 +38,10 @@
             // btnManageCustomers
             // 
             this.btnManageCustomers.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnManageCustomers.Location = new System.Drawing.Point(314, 465);
+            this.btnManageCustomers.Location = new System.Drawing.Point(229, 122);
             this.btnManageCustomers.Margin = new System.Windows.Forms.Padding(4);
             this.btnManageCustomers.Name = "btnManageCustomers";
-            this.btnManageCustomers.Size = new System.Drawing.Size(143, 29);
+            this.btnManageCustomers.Size = new System.Drawing.Size(289, 60);
             this.btnManageCustomers.TabIndex = 0;
             this.btnManageCustomers.Text = "Manage Customers";
             this.btnManageCustomers.UseVisualStyleBackColor = true;
@@ -50,10 +50,10 @@
             // btnManageFlights
             // 
             this.btnManageFlights.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnManageFlights.Location = new System.Drawing.Point(501, 465);
+            this.btnManageFlights.Location = new System.Drawing.Point(229, 225);
             this.btnManageFlights.Margin = new System.Windows.Forms.Padding(4);
             this.btnManageFlights.Name = "btnManageFlights";
-            this.btnManageFlights.Size = new System.Drawing.Size(119, 29);
+            this.btnManageFlights.Size = new System.Drawing.Size(289, 72);
             this.btnManageFlights.TabIndex = 1;
             this.btnManageFlights.Text = "Manage Flights";
             this.btnManageFlights.UseVisualStyleBackColor = true;
@@ -62,10 +62,10 @@
             // btnManageBookings
             // 
             this.btnManageBookings.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnManageBookings.Location = new System.Drawing.Point(125, 465);
+            this.btnManageBookings.Location = new System.Drawing.Point(229, 180);
             this.btnManageBookings.Margin = new System.Windows.Forms.Padding(4);
             this.btnManageBookings.Name = "btnManageBookings";
-            this.btnManageBookings.Size = new System.Drawing.Size(162, 23);
+            this.btnManageBookings.Size = new System.Drawing.Size(289, 60);
             this.btnManageBookings.TabIndex = 2;
             this.btnManageBookings.Text = "Manage Bookings";
             this.btnManageBookings.UseVisualStyleBackColor = true;
@@ -74,22 +74,22 @@
             // button1
             // 
             this.button1.ForeColor = System.Drawing.Color.DarkRed;
-            this.button1.Location = new System.Drawing.Point(3, 10);
+            this.button1.Location = new System.Drawing.Point(2, 445);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 23);
+            this.button1.Size = new System.Drawing.Size(189, 49);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Login";
+            this.button1.Text = "Logout";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.ForeColor = System.Drawing.Color.DarkRed;
-            this.button2.Location = new System.Drawing.Point(731, 5);
+            this.button2.Location = new System.Drawing.Point(636, 2);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(59, 33);
+            this.button2.Size = new System.Drawing.Size(157, 47);
             this.button2.TabIndex = 4;
             this.button2.Text = "EXIT";
             this.button2.UseVisualStyleBackColor = true;

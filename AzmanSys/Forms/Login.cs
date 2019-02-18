@@ -1,4 +1,5 @@
 ﻿using System;
+using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,18 +9,36 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AzmanSys.Forms
+namespace AzmanSys
 {
     public partial class Login : Form
     {
+        customerDbConn mysqlConn;
         public Login()
         {
             InitializeComponent();
+            mysqlConn = new customerDbConn();
+            mysqlConn.connect();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
+            int r = 0;
+            string sql = "SELECT count(*) FROM `tblLogin` WHERE Email='" + tbEmail.Text +"' AND Password ='"+ tbPassword.Text +"' ";
 
+            MySqlDataAdapter da = new MySqlDataAdapter(sql, mysqlConn.conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            r = Convert.ToInt32(dt.Rows[0][0].ToString());
+            if(r == 1)
+            {
+                MessageBox.Show("AM GOOD");
+                Close();
+                (new MainForm()).Show();
+            } else
+            {
+                MessageBox.Show("Sorry Boss!!");
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

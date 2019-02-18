@@ -46,7 +46,9 @@ namespace AzmanSys
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Close(); // close the current form
+            Login LoginForm = new Login();
+            LoginForm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
