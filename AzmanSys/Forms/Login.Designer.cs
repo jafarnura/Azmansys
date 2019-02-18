@@ -37,7 +37,7 @@
             // 
             // tbEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(210, 199);
+            this.tbEmail.Location = new System.Drawing.Point(193, 126);
             this.tbEmail.Margin = new System.Windows.Forms.Padding(4);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(232, 26);
@@ -46,17 +46,17 @@
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(210, 260);
+            this.tbPassword.Location = new System.Drawing.Point(193, 210);
             this.tbPassword.Margin = new System.Windows.Forms.Padding(4);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.PasswordChar = '/';
+            this.tbPassword.PasswordChar = '.';
             this.tbPassword.Size = new System.Drawing.Size(232, 26);
             this.tbPassword.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(147, 203);
+            this.label1.Location = new System.Drawing.Point(140, 129);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 16);
@@ -66,7 +66,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(116, 263);
+            this.label2.Location = new System.Drawing.Point(116, 210);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 16);
@@ -75,20 +75,22 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(210, 340);
+            this.btnLogin.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnLogin.Location = new System.Drawing.Point(193, 306);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(112, 28);
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "LOGIN";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Coral;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.BackgroundImage = global::AzmanSys.Properties.Resources._1412031;
             this.ClientSize = new System.Drawing.Size(873, 472);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label2);

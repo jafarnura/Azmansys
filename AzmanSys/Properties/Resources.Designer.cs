@@ -63,6 +63,16 @@ namespace AzmanSys.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1412031 {
+            get {
+                object obj = ResourceManager.GetObject("1412031", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Airplane_Jet_Airplanes_in_sky_Wallpaper {
             get {
                 object obj = ResourceManager.GetObject("Airplane-Jet-Airplanes-in-sky-Wallpaper", resourceCulture);

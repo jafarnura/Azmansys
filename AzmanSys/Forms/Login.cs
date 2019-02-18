@@ -32,7 +32,7 @@ namespace AzmanSys
             r = Convert.ToInt32(dt.Rows[0][0].ToString());
             if(r == 1)
             {
-                MessageBox.Show("AM GOOD");
+                MessageBox.Show("Successful!!");
                 Close();
                 (new MainForm()).Show();
             } else

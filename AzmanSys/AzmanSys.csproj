@@ -148,5 +148,8 @@
   <ItemGroup>
     <None Include="Resources\Airplane-Jet-Airplanes-in-sky-Wallpaper.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1412031.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
