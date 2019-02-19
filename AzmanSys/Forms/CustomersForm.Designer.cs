@@ -46,6 +46,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tbNation = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnMainMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,7 +97,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 36);
+            this.label1.Location = new System.Drawing.Point(86, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 4;
@@ -105,7 +106,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(53, 65);
+            this.label2.Location = new System.Drawing.Point(94, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 5;
@@ -114,7 +115,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 108);
+            this.label3.Location = new System.Drawing.Point(93, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 6;
@@ -170,7 +171,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(79, 186);
+            this.label5.Location = new System.Drawing.Point(112, 182);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 13;
@@ -186,7 +187,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(91, 219);
+            this.label6.Location = new System.Drawing.Point(117, 215);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(27, 13);
             this.label6.TabIndex = 15;
@@ -202,11 +203,21 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(79, 254);
+            this.label7.Location = new System.Drawing.Point(88, 257);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 13);
             this.label7.TabIndex = 17;
             this.label7.Text = "Nationality";
+            // 
+            // btnMainMenu
+            // 
+            this.btnMainMenu.Location = new System.Drawing.Point(575, 266);
+            this.btnMainMenu.Name = "btnMainMenu";
+            this.btnMainMenu.Size = new System.Drawing.Size(123, 23);
+            this.btnMainMenu.TabIndex = 36;
+            this.btnMainMenu.Text = "Back to Main Menu";
+            this.btnMainMenu.UseVisualStyleBackColor = true;
+            this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click_1);
             // 
             // CustomersForm
             // 
@@ -214,6 +225,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
             this.ClientSize = new System.Drawing.Size(800, 552);
+            this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tbNation);
             this.Controls.Add(this.label6);
@@ -261,5 +273,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbNation;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnMainMenu;
     }
 }

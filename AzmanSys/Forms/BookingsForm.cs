@@ -41,7 +41,7 @@ namespace AzmanSys
             {
                 mysqlConn.updateBooking(tbBookingID.Text, tbCustomerID.Text, tbFlightID.Text, dtBookingDateTime.Text, tbBookingTotalCost.Text);
                 dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM `tblBooking`").Tables[0];
-            }
+            }// the button update is used to update your booking 
             mysqlConn.connClose();
         }
 
@@ -76,7 +76,7 @@ namespace AzmanSys
         {
             Close();
             (new MainForm()).Show();
-        }
+        }// This button mainmenu it takes you back to the main home page
 
         private void BookingsForm_Load(object sender, EventArgs e)
         {

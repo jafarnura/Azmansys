@@ -44,6 +44,7 @@
             this.dtDepartureDateTime = new System.Windows.Forms.DateTimePicker();
             this.tbArrivalCity = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnMainMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -195,12 +196,23 @@
             this.label5.TabIndex = 32;
             this.label5.Text = "Arrival City";
             // 
+            // btnMainMenu
+            // 
+            this.btnMainMenu.Location = new System.Drawing.Point(516, 271);
+            this.btnMainMenu.Name = "btnMainMenu";
+            this.btnMainMenu.Size = new System.Drawing.Size(123, 23);
+            this.btnMainMenu.TabIndex = 37;
+            this.btnMainMenu.Text = "Back to Main Menu";
+            this.btnMainMenu.UseVisualStyleBackColor = true;
+            this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click_1);
+            // 
             // FlightsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AzmanSys.Properties.Resources.Las_Vegas1;
             this.ClientSize = new System.Drawing.Size(765, 450);
+            this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbArrivalCity);
             this.Controls.Add(this.dtDepartureDateTime);
@@ -244,5 +256,6 @@
         private System.Windows.Forms.DateTimePicker dtDepartureDateTime;
         private System.Windows.Forms.TextBox tbArrivalCity;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnMainMenu;
     }
 }

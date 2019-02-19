@@ -37,7 +37,7 @@ namespace AzmanSys
             BookingsForm bookingsForm = new BookingsForm();
             bookingsForm.Show();
           
-        }
+        }// this button aloows the user to manage your  booking 
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -49,11 +49,11 @@ namespace AzmanSys
             Close(); // close the current form
             Login LoginForm = new Login();
             LoginForm.Show();
-        }
+        }// this button used to Login your page before you move to your account 
 
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
+        }// this button allow the user to exist 
     }
 }

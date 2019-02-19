@@ -36,10 +36,10 @@ namespace AzmanSys
                 Close();
                 (new MainForm()).Show();
             } else
-            {
+            {// This button show if you type correct password
                 MessageBox.Show("Sorry Boss!!");
             }
-        }
+        } // this button shows if you type incorrect password
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
