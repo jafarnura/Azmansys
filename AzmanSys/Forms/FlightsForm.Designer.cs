@@ -45,6 +45,7 @@
             this.tbArrivalCity = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnMainMenu = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -206,12 +207,23 @@
             this.btnMainMenu.UseVisualStyleBackColor = true;
             this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click_1);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(63, 53);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 23);
+            this.button1.TabIndex = 38;
+            this.button1.Text = "Search";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FlightsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AzmanSys.Properties.Resources.Las_Vegas1;
             this.ClientSize = new System.Drawing.Size(765, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbArrivalCity);
@@ -257,5 +269,6 @@
         private System.Windows.Forms.TextBox tbArrivalCity;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnMainMenu;
+        private System.Windows.Forms.Button button1;
     }
 }

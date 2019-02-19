@@ -101,5 +101,11 @@ namespace AzmanSys
             Close();
             (new MainForm()).Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (mysqlConn.connOpen() == true)
+                dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM'tblFlight' where F_Departure_City='" + tbDepartureCity.Text + "' or F_Arrival_City='" + tbArrivalCity.Text + "'").Tables[0];
+        }
     }
 }

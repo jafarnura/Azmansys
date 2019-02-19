@@ -42,7 +42,6 @@
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(232, 26);
             this.tbEmail.TabIndex = 2;
-            this.tbEmail.Text = "ja";
             this.tbEmail.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tbPassword
