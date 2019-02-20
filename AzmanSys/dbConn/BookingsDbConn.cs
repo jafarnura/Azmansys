@@ -11,24 +11,20 @@ namespace AzmanSys
     {
         public void insertBooking(string CusID, string FlightID, string Booking_DateTime, string Total_BookingCost)
         {
-           MySqlCommand comm = conn.CreateCommand();
-            comm.CommandText = "INSERT INTO `tblBooking` (`BookinID`, `CusID`, `FlightID`, `Booking_DateTime`, `Total_BookingCost`) VALUES " + 
-                "(NULL,@CusID, @FlightID, @Booking_DateTime, @Total_BookingCost);";
+            MySqlCommand comm = conn.CreateCommand();
+            comm.CommandText = "INSERT INTO `tblbooking` (`CusID`, `FlightID`, `Booking_DateTime`, `Total_BookingCost`) VALUES (@CusID, @FlightID, @Booking_DateTime, @Total_BookingCost);";
             comm.Parameters.AddWithValue("@CusID", CusID);
-            comm.Parameters.AddWithValue("@FlightID",FlightID);
+            comm.Parameters.AddWithValue("@FlightID", FlightID);
             comm.Parameters.AddWithValue("@Booking_DateTime", Booking_DateTime);
             comm.Parameters.AddWithValue("@Total_BookingCost", Total_BookingCost);
             comm.ExecuteNonQuery();
             connClose();
         }
 
-  
-
-
         public void updateBooking(String BookinID, string CusID, string FlightID, string Booking_DateTime, string Total_BookingCost)
         {
             MySqlCommand comm = conn.CreateCommand();
-            comm.CommandText = "UPDATE `tblBooking` SET `CusID`=@CusID,`FlightID`=@FlightID,`Booking_DateTime`=@Booking_DateTime,`Total_BookingCost`=@Total_BookingCost WHERE BookinID=@BookinID";
+            comm.CommandText = "UPDATE `tblbooking` SET `CusID`=@CusID,`FlightID`=@FlightID,`Booking_DateTime`=@Booking_DateTime,`Total_BookingCost`=@Total_BookingCost WHERE BookinID=@BookinID";
             comm.Parameters.AddWithValue("@CusID", CusID );
             comm.Parameters.AddWithValue("@FlightID", FlightID);
             comm.Parameters.AddWithValue("@Booking_DateTime", Booking_DateTime);
@@ -40,7 +36,7 @@ namespace AzmanSys
         public void deleteBooking(string BookinID)
         {
             MySqlCommand comm = conn.CreateCommand();
-            comm.CommandText = "DELETE FROM `tblBooking` WHERE `BookinID` = @BookinID";
+            comm.CommandText = "DELETE FROM `tblbooking` WHERE `BookinID` = @BookinID";
             comm.Parameters.AddWithValue("@BookinID", BookinID);
             comm.ExecuteNonQuery();
             connClose();

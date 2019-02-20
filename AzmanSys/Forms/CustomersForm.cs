@@ -43,6 +43,7 @@ namespace AzmanSys
             tbFName.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             tbLName.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
             tbTel.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            tbNation.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
             }
         }
 

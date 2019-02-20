@@ -109,5 +109,15 @@ namespace AzmanSys.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plane_flying_in_sunset {
+            get {
+                object obj = ResourceManager.GetObject("plane-flying-in-sunset", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

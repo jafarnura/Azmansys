@@ -42,11 +42,11 @@
             this.tbTel = new System.Windows.Forms.TextBox();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbDob = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tbNation = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnMainMenu = new System.Windows.Forms.Button();
+            this.tbDob = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,6 +97,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(86, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 13);
@@ -106,6 +108,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(94, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
@@ -115,6 +119,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label3.Location = new System.Drawing.Point(93, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
@@ -124,6 +130,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(53, 145);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 13);
@@ -171,22 +179,19 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label5.Location = new System.Drawing.Point(112, 182);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 13;
             this.label5.Text = "Email";
             // 
-            // tbDob
-            // 
-            this.tbDob.Location = new System.Drawing.Point(157, 212);
-            this.tbDob.Name = "tbDob";
-            this.tbDob.Size = new System.Drawing.Size(100, 20);
-            this.tbDob.TabIndex = 14;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label6.Location = new System.Drawing.Point(117, 215);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(27, 13);
@@ -203,6 +208,8 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label7.Location = new System.Drawing.Point(88, 257);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 13);
@@ -219,17 +226,28 @@
             this.btnMainMenu.UseVisualStyleBackColor = true;
             this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click_1);
             // 
+            // tbDob
+            // 
+            this.tbDob.CustomFormat = "yyyy/MM/dd hh:mm:ss";
+            this.tbDob.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.tbDob.Location = new System.Drawing.Point(157, 209);
+            this.tbDob.Name = "tbDob";
+            this.tbDob.Size = new System.Drawing.Size(136, 20);
+            this.tbDob.TabIndex = 37;
+            // 
             // CustomersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
+            this.BackgroundImage = global::AzmanSys.Properties.Resources.plane_flying_in_sunset;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 552);
+            this.Controls.Add(this.tbDob);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tbNation);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.tbDob);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.tbTel);
@@ -269,10 +287,10 @@
         private System.Windows.Forms.TextBox tbTel;
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbDob;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbNation;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnMainMenu;
+        private System.Windows.Forms.DateTimePicker tbDob;
     }
 }
