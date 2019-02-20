@@ -17,7 +17,7 @@ namespace AzmanSys
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             (new MainForm()).Show();
-           // (new Login()).Show();
+            (new Login()).Show();
             Application.Run();
          
         }
